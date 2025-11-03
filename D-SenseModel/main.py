@@ -64,7 +64,7 @@ models = [
 
 # Parameters
                                          # Note: The ADP folders for Gait-related tasks and Gesture-related tasks should be different.
-test_set_ratio    = 0.2;                   ADP_dir         = '/home/wzl/paper/TMC/0.04'
+test_set_ratio    = 0.2;                   ADP_dir         = '/ADP'
                                          # domain_idx      = domains[I] 'I IN [0, 4]'
 domains           = [1, 2, 3, 4, 5];       domain_idx      = domains[1]
 gesture_cats      = [1, 2, 3, 4, 5, 6];    N_gesture       = len(gesture_cats)
