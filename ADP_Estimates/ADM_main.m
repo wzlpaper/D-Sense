@@ -40,7 +40,7 @@ params = {1;                    % Doppler frequency resolution.
 save_DFS(params{6}, params{7})
 
 % Extract the DFS filenames corresponding to the sensing area.
-[DFS_list, Length, Width]  = area_link(params{7}, params{5}, params{12});
+[DFS_list, Length, Width] = area_link(params{7}, params{5}, params{12});
 if ~exist(params{9}, 'dir')
     mkdir(params{9});
 end
@@ -51,14 +51,11 @@ if startsWith(params{3}, 'N=')
 else
     sigma = params{3};
 end
-
 D_path = fullfile(params{9}, [num2str(Length), '-', num2str(Width), '-', num2str(params{1}), '-', num2str(sigma) '.mat']);
-
 if exist(D_path, 'file') && any(strcmp({whos('-file', D_path).name}, 'D'))
     load(D_path, 'D');
     fprintf('Found "D" in file: %s\n', D_path);
 else 
-
     [distance_frequency_x, D_x] = calculate_D(params{10}, ...
                                               params{11}, ...
                                               params{1}, ...
@@ -66,7 +63,6 @@ else
                                               Length, Width, ...
                                               'x' ...  % The perspective of interest. ('x', 'y')
                                               );
-
     [distance_frequency_y, D_y] = calculate_D(params{10}, ...
                                               params{11}, ...
                                               params{1}, ...
