@@ -16,7 +16,7 @@ function [distance_frequency, D] = calculate_D(f_min, f_max, R, Rules, L, W, P)
 %   P       - Perspective axis: 'x' or 'y'
 %
 % Outputs:
-%   distance_frequency - S'_Ri,j,k. Eq.(17) and (18)
+%   distance_frequency - S^i'_j,k. Eq.(13) and (14)
 %   D                  - Distance-to-Frequency Translation_Tensor
 
     tic
@@ -41,7 +41,7 @@ function [distance_frequency, D] = calculate_D(f_min, f_max, R, Rules, L, W, P)
     distance = sqrt((X - X(static_point_x,static_point_y)).^2+ ...
                (Y - Y(static_point_x,static_point_y)).^2);
     
-    % D related to the link perspective. Eq.(17) and (18)
+    % D related to the link perspective. Eq.(13) and (14)
     switch P
         case 'x'
             distance(1:floor(m/2), :) = -distance(1:floor(m/2), :);
@@ -184,3 +184,4 @@ function [x, y] = calculate_intersection(a1, b1, a2, b2, E1_c, E2_c)
         y = nan;
     end
 end
+
