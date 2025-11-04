@@ -15,8 +15,8 @@ function generate_save_ADP(DFS_list, ADP_path, Time_sampling_rate, D_x, D_y, ADP
 % Outputs:
 %   This function does not return variables to the workspace.
 %   For each input DFS_list row, it generates and saves a MAT-file containing:
-%       ADP   - 4D matrix of size [2, ADP_Dim(1), ADP_Dim(2), time],
-%               where the first dimension corresponds to [ADPx; ADPy].
+%       ADP   - 4D matrix of size [ADP_Dim(1), ADP_Dim(2), time, 2],
+%               where the last dimension corresponds to [ADPx; ADPy].
 
 if ~exist(ADP_path, 'dir')
     mkdir(ADP_path);
@@ -135,4 +135,5 @@ end
 %
 %  Colormap: parula(256)
 %  Zoom factor: 800% (Applicable for size [120;120])
+
 %  Frame rate: 100 frames/sec
