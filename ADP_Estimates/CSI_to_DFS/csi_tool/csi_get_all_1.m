@@ -19,5 +19,4 @@ for k = 1:length(csi_trace)
     timestamp(k) = csi_entry.timestamp_low;
     cfr_array_1(k,:) = csi_tx_1;
 end
-
 end
