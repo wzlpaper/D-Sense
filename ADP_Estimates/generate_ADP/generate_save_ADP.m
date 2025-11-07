@@ -51,12 +51,12 @@ end
                 %{
                   y 
                Rx2|                
-                  |
-                  |     Rx1(f_max--->f_min)
-                  |          ^ 
-                  |          |
-                  |          |
-                  |          |
+                  |    ^
+                  |    | Rx1(f_max--->f_min)
+                  |    |      
+                  |    |      
+                  |    |      
+                  |    |      
                   |
                   |____________________________x
                  Tx                           Rx1
@@ -76,8 +76,8 @@ end
                   |          
                   |          
                   |
-                  |   --->Rx2(f_max--->f_min)
-                  |
+                  |       Rx2(f_max--->f_min)
+                  |     ——————————————————————>
                   |____________________________x
                  Tx                           Rx1
                 %}
@@ -118,3 +118,4 @@ end
 %  Colormap: parula(256)
 %  Zoom factor: 800% (Applicable for size [120;120])
 %  Frame rate: 100 frames/sec
+
