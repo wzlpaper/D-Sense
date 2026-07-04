@@ -31,3 +31,19 @@ We recommend using MATLAB R2023b or later to extract ADP. The procedure is as fo
 
 #### Software
 - The D-SenseModel is trained using TensorFlow 2.18.0. Since TensorFlow ≥ 2.11.0 does not support native GPU acceleration on Windows, we recommend using WSL2 to set up an Ubuntu 22.04 LTS environment on Windows 11, where GPU acceleration can be properly enabled. If you are using a server with a native Linux system, this requirement can be ignored.
+
+#### Environment Setup
+**1. Create a Conda environment named D-Sense based on Python 3.10 and activate it.**
+```bash
+conda create -n D-Sense python=3.10
+conda activate D-Sense
+```
+
+**2. Install TensorFlow.**
+```bash
+pip install --upgrade pip
+pip install tensorflow==2.18.0
+```
+
+**3. Install CUDA.**
+Install CUDA 12.5 from the official NVIDIA [website](https://developer.nvidia.com/cuda-12-5-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=WSL-Ubuntu&target_version=2.0&target_type=deb_local).
