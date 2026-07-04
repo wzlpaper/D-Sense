@@ -356,167 +356,63 @@ task_, model_    = list(tasks.items())[-1], models[0]
 
 The supported models, tasks, and their corresponding indices are summarized in the table below:
 
-
-
 <div align="center">
 
-<table border="1">
+<table border="1" style="border-collapse:collapse;">
+
+  <tr>
+    <th>Model Index</th>
+    <th>Model Name</th>
+  </tr>
+
+  <tr><td align="center">M = 0</td><td align="center">CNN-RNN</td></tr>
+  <tr><td align="center">M = 1</td><td align="center">Transformer</td></tr>
+  <tr><td align="center">M = 2</td><td align="center">CNN-Transformer</td></tr>
+  <tr><td align="center">M = 3</td><td align="center">RNN-Transformer</td></tr>
+  <tr><td align="center">M = 4</td><td align="center">CNN-RNN-Transformer</td></tr>
+  <tr><td align="center">M = 5</td><td align="center">CNN</td></tr>
+  <tr><td align="center">M = 6</td><td align="center">RNN</td></tr>
 
   <tr>
     <th>Task Index</th>
     <th>Description</th>
   </tr>
-
-  <tr>
-    <td align="center">T = 0</td>
-    <td align="center">In-domain Gesture Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 1</td>
-    <td align="center">In-domain User Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 2</td>
-    <td align="center">In-domain Gesture and User Synchronized Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 3</td>
-    <td align="center">Cross-orientation Gesture Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 4</td>
-    <td align="center">Cross-location Gesture Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 5</td>
-    <td align="center">Cross-orientation User Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 6</td>
-    <td align="center">Cross-location User Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 7</td>
-    <td align="center">Cross-orientation Gesture and User Synchronized Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 8</td>
-    <td align="center">Cross-location Gesture and User Synchronized Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 9</td>
-    <td align="center">Orientation Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 10</td>
-    <td align="center">Location Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 11</td>
-    <td align="center">Gesture and Orientation Synchronized Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 12</td>
-    <td align="center">Gesture and Location Synchronized Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 13</td>
-    <td align="center">User and Orientation Synchronized Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 14</td>
-    <td align="center">User and Location Synchronized Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 15</td>
-    <td align="center">Orientation and Location Synchronized Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 16</td>
-    <td align="center">Gesture, User and Location Synchronized Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 17</td>
-    <td align="center">Gesture, User and Orientation Synchronized Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 18</td>
-    <td align="center">Gesture, Orientation and Location Synchronized Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 19</td>
-    <td align="center">User, Orientation and Location Synchronized Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 20</td>
-    <td align="center">Four-task Synchronized Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 21</td>
-    <td align="center">Gait Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 22</td>
-    <td align="center">Track Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 23</td>
-    <td align="center">Gait and Track Synchronized Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 24</td>
-    <td align="center">Cross-location Orientation Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 25</td>
-    <td align="center">Cross-user Orientation Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 26</td>
-    <td align="center">Cross-gesture Orientation Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 27</td>
-    <td align="center">Cross-orientation Location Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 28</td>
-    <td align="center">Cross-gesture Location Recognition</td>
-  </tr>
-
-  <tr>
-    <td align="center">T = 29</td>
-    <td align="center">Cross-user Location Recognition</td>
-  </tr>
+  
+  <tr><td align="center">T = 0</td><td align="center">In-Domain Gesture Recognition</td></tr>
+  <tr><td align="center">T = 1</td><td align="center">In-Domain User Recognition</td></tr>
+  <tr><td align="center">T = 2</td><td align="center">In-Domain Gesture and User Synchronized Recognition</td></tr>
+  <tr><td align="center">T = 3</td><td align="center">Cross-Orientation Gesture Recognition</td></tr>
+  <tr><td align="center">T = 4</td><td align="center">Cross-Location Gesture Recognition</td></tr>
+  <tr><td align="center">T = 5</td><td align="center">Cross-Orientation User Recognition</td></tr>
+  <tr><td align="center">T = 6</td><td align="center">Cross-Location User Recognition</td></tr>
+  <tr><td align="center">T = 7</td><td align="center">Cross-Orientation Gesture and User Synchronized Recognition</td></tr>
+  <tr><td align="center">T = 8</td><td align="center">Cross-Location Gesture and User Synchronized Recognition</td></tr>
+  <tr><td align="center">T = 9</td><td align="center">Orientation Recognition</td></tr>
+  <tr><td align="center">T = 10</td><td align="center">Location Recognition</td></tr>
+  <tr><td align="center">T = 11</td><td align="center">Gesture and Orientation Synchronized Recognition</td></tr>
+  <tr><td align="center">T = 12</td><td align="center">Gesture and Location Synchronized Recognition</td></tr>
+  <tr><td align="center">T = 13</td><td align="center">User and Orientation Synchronized Recognition</td></tr>
+  <tr><td align="center">T = 14</td><td align="center">User and Location Synchronized Recognition</td></tr>
+  <tr><td align="center">T = 15</td><td align="center">Orientation and Location Synchronized Recognition</td></tr>
+  <tr><td align="center">T = 16</td><td align="center">Gesture, User and Location Synchronized Recognition</td></tr>
+  <tr><td align="center">T = 17</td><td align="center">Gesture, User and Orientation Synchronized Recognition</td></tr>
+  <tr><td align="center">T = 18</td><td align="center">Gesture, Orientation and Location Synchronized Recognition</td></tr>
+  <tr><td align="center">T = 19</td><td align="center">User, Orientation and Location Synchronized Recognition</td></tr>
+  <tr><td align="center">T = 20</td><td align="center">Four-Task Synchronized Recognition</td></tr>
+  <tr><td align="center">T = 21</td><td align="center">Gait Recognition</td></tr>
+  <tr><td align="center">T = 22</td><td align="center">Track Recognition</td></tr>
+  <tr><td align="center">T = 23</td><td align="center">Gait and Track Synchronized Recognition</td></tr>
+  <tr><td align="center">T = 24</td><td align="center">Cross-Location Orientation Recognition</td></tr>
+  <tr><td align="center">T = 25</td><td align="center">Cross-User Orientation Recognition</td></tr>
+  <tr><td align="center">T = 26</td><td align="center">Cross-Gesture Orientation Recognition</td></tr>
+  <tr><td align="center">T = 27</td><td align="center">Cross-Orientation Location Recognition</td></tr>
+  <tr><td align="center">T = 28</td><td align="center">Cross-Gesture Location Recognition</td></tr>
+  <tr><td align="center">T = 29</td><td align="center">Cross-User Location Recognition</td></tr>
 
 </table>
 
 </div>
+
+After adjusting or selecting the parameters and completing training, the confusion matrix of the model under the selected configuration will be displayed based on its performance on the test set.
+
+## Partial Sensing Accuracy
