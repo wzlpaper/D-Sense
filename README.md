@@ -64,3 +64,97 @@ pip install numpy scipy pandas scikit-learn tqdm
 ```
 
 > ❗ Ensure that the ```/D-SenseModel/D_Sense_DNN``` folder is located at the same level as ```/D-SenseModel/main.py```.
+
+## ADP Estimation
+ADP estimation is implemented in MATLAB and executed on the CPU. In our experiments, we use an Intel i9-14900HX processor. Before running ```/ADP_Estimates/ADP_main.m```, the following parameters need to be configured:
+```matlab
+params = {
+    1;                    % Doppler frequency resolution.
+    100;                  % DFS time dimension sampling (to reduce computational power consumption).
+    'N=sigma';            % Spatial representation rule ('N=sigma' or 'delta').
+    [20, 20];             % Dimensions of the ADP.
+    '1~9';                % Area index (see the paper).
+    'CSI\';               % CSI save path.
+    'DFS\';               % DFS save path.
+    'ADP\';               % ADP save path.
+    'D\';                 % D save path.
+    -60;                  % Minimum Doppler frequency.
+    60;                   % Maximum Doppler frequency.
+    'Gesture'             % Task ('Gesture' or 'Gait').
+};
+```
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">No.</th>
+      <th align="center">Description</th>
+      <th align="center">Example Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td align="center">Doppler frequency resolution</td>
+      <td align="center"><code>1</code></td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td align="center">DFS time dimension sampling</td>
+      <td align="center"><code>100</code></td>
+    </tr>
+    <tr>
+      <td align="center">3</td>
+      <td align="center">Spatial representation rule</td>
+      <td align="center"><code>N=sigma</code> / <code>delta</code></td>
+    </tr>
+    <tr>
+      <td align="center">4</td>
+      <td align="center">ADP dimensions</td>
+      <td align="center"><code>[20, 20]</code></td>
+    </tr>
+    <tr>
+      <td align="center">5</td>
+      <td align="center">Area index</td>
+      <td align="center"><code>1~9</code></td>
+    </tr>
+    <tr>
+      <td align="center">6</td>
+      <td align="center">CSI save path</td>
+      <td align="center"><code>CSI\</code></td>
+    </tr>
+    <tr>
+      <td align="center">7</td>
+      <td align="center">DFS save path</td>
+      <td align="center"><code>DFS\</code></td>
+    </tr>
+    <tr>
+      <td align="center">8</td>
+      <td align="center">ADP save path</td>
+      <td align="center"><code>ADP\</code></td>
+    </tr>
+    <tr>
+      <td align="center">9</td>
+      <td align="center">D save path</td>
+      <td align="center"><code>D\</code></td>
+    </tr>
+    <tr>
+      <td align="center">10</td>
+      <td align="center">Minimum Doppler frequency</td>
+      <td align="center"><code>-60</code></td>
+    </tr>
+    <tr>
+      <td align="center">11</td>
+      <td align="center">Maximum Doppler frequency</td>
+      <td align="center"><code>60</code></td>
+    </tr>
+    <tr>
+      <td align="center">12</td>
+      <td align="center">Task</td>
+      <td align="center"><code>Gesture</code> / <code>Gait</code></td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
