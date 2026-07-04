@@ -167,49 +167,34 @@ Each ```.mat``` file in the ```ADP/``` directory is saved as a 3-D tensor after 
 
 <div align="center">
 
-<table>
-  <thead>
-    <tr>
-      <th align="center">MATLAB Tools (implay)</th>
-      <th align="center">Recommended Parameters</th>
-      <th align="center">Visualization Results</th>
-    </tr>
-  </thead>
+<table border="1">
 
-  <tbody>
+  <tr>
+    <th>MATLAB Tools (implay)</th>
+    <th>Recommended Parameters</th>
+    <th>Visualization Results</th>
+  </tr>
 
-    <tr>
-      <td align="center">Magnification</td>
-      <td align="center">800%</td>
-      <td align="center">
-        <img src="/Image/Fig2-ADP-user1-1-1-4-11-y.gif" width="220"><br>
-        ADP power distribution visualization<br>
-        (120 × 120 spatial map)
-      </td>
-    </tr>
+  <tr>
+    <td align="center">Magnification</td>
+    <td align="center">800%</td>
+    <td align="center" rowspan="3">
+      <img src="Image/Fig.2.gif" width="240"><br>
+    </td>
+  </tr>
 
-    <tr>
-      <td align="center">Color Map</td>
-      <td align="center"><code>parula(256)</code></td>
-      <td align="center">
-        Preserves fine-grained power variations<br>
-        Enhances contrast in low-SNR regions<br>
-        Improves spatial continuity perception
-      </td>
-    </tr>
+  <tr>
+    <td align="center">Color Map</td>
+    <td align="center">parula(256)</td>
+  </tr>
 
-    <tr>
-      <td align="center">Frame Rate</td>
-      <td align="center">20 frames/sec</td>
-      <td align="center">
-        Smooth temporal evolution of ADP<br>
-        Maintains perceptual continuity<br>
-        Suitable for dynamic gesture analysis
-      </td>
-    </tr>
+  <tr>
+    <td align="center">Frame Rate</td>
+    <td align="center">20 fps</td>
+  </tr>
 
-  </tbody>
 </table>
 
 </div>
 
+The physical interpretation of the power distribution can be found in the corresponding [paper](https://doi.org/10.1109/TMC.2026.3709191):
