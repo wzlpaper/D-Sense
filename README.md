@@ -1,4 +1,4 @@
-# D-Sense: Expanding Gesture Recognition via Wi-Fi
+<h1 align="center">D-Sense: Expanding Gesture Recognition via Wi-Fi</h1>
 This code repository provides a basic implementation of D-Sense.
 
 ## Cite the Paper
@@ -20,4 +20,4 @@ This section introduces the requirements for running this codebase.
 ### MATLAB (```/ADP_Estimates```)
 We recommend using MATLAB R2023b or newer versions.
 
-### Python (```)
+### Python (```/D-SenseModel```)
