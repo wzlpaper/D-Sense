@@ -20,7 +20,7 @@ close all;
 % Parameter Settings.
 params = {1;                    % Doppler frequency resolution.
           100;                  % DFS time dimension sampling. (to reduce computational power consumption)
-          'N=sigam' or 'delta'; % Spatial representation rules for distance. ('N=sigam' or 'delta', where 'N=sigam' and the equal sign has no spaces)
+          'N=sigma' or 'delta'; % Spatial representation rules for distance. ('N=sigam' or 'delta', where 'N=sigma' and the equal sign has no spaces)
           [20, 20];             % Dimensions of the ADP.
           '1~9';                % Area index "1~9". (See the paper)
           'CSI\';               % CSI save path.
