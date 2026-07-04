@@ -838,10 +838,10 @@ If our work has been helpful to your research, please consider citing:
 }
 ```
 
-## Contact
-
-If you have any questions, please feel free to contact me at [wzlpaper@126.com](mailto:wzlpaper@126.com).
-
 ## Acknowledgments
 
 We would like to thank [Widar3.0](https://doi.org/10.1109/TPAMI.2021.3105387) for its inspiration and for providing valuable support in terms of the dataset.
+
+## Contact
+
+If you have any questions, please feel free to contact me at [wzlpaper@126.com](mailto:wzlpaper@126.com).
