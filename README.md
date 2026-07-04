@@ -17,13 +17,13 @@ In this repository, we release the code for extracting the Absolute Distance Pro
 ## Preparations
 This section introduces the requirements for running this codebase.
 
-### ADP Estimates
+### Preparations for ADP Estimation
 We recommend using MATLAB R2023b or later to extract ADP. The procedure is as follows:
 
 - Download the ```/ADP_Estimates``` directory from this repository.
 - Launch MATLAB and set the working directory to ```/ADP_Estimates```.
 - Add ```/ADP_Estimates/CSI_to_DFS``` and ```/ADP_Estimates/generate_ADP``` to the MATLAB path using the "Add Folder and Subfolders" function.
-### D-Sense Model
+### Preparations for D-Sense Model Training
 
 #### Hardware
 - We recommend using an NVIDIA RTX 4060 (8GB) or higher GPU.
