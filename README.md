@@ -158,5 +158,8 @@ params = {
 </table>
 
 </div>
+
 After configuring the parameters, run ```/ADP_Estimates/ADP_main.m```. Upon completion, the Doppler frequency data for each CSI sample will be saved in the ```DFS/``` directory, the generated ADP data will be saved in the ```ADP/``` directory, and the corresponding Frequency-Distance Translation Tensor for the selected area index will be saved in the ```D/``` directory.
-> ❗ The Doppler Frequency Shift (DFS) is generated implicitly. Before the ADP for the selected region is fully generated, DFS data cannot be accessed or visualized during runtime. Once all ADP data have been generated, the DFS results can be viewed without any restriction. If early access to DFS is required, please refer to the corresponding DFS data in the Widar3.0 dataset.
+
+
+> ❗ The Doppler Frequency Shift (DFS) is generated implicitly. Before the ADP for the selected region is fully generated, DFS data cannot be accessed or visualized during runtime. Once all ADP data have been generated, the DFS results can be viewed without any restriction. If early access to DFS is required, please refer to the corresponding DFS data in the [Widar3.0 dataset](https://tns.thss.tsinghua.edu.cn/widar3.0/).
