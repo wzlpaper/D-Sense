@@ -429,6 +429,8 @@ The supported models, tasks, and their corresponding indices are summarized in t
 
 After adjusting or selecting the parameters and completing training, the confusion matrix of the model under the selected configuration will be displayed based on its performance on the test set.
 
+---
+
 ## Partial Sensing Accuracy
 
 ### Experimental Accuracy of the D-Sense Across Different Sensing Tasks
