@@ -58,3 +58,7 @@ sudo apt-get update
 sudo apt-get -y install cuda-toolkit-12-5
 ```
 
+**4. Install additional dependencies**
+```bash
+pip install numpy scipy pandas scikit-learn tqdm tensorflow==2.18.0
+```
