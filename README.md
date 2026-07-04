@@ -62,3 +62,5 @@ sudo apt-get -y install cuda-toolkit-12-5
 ```bash
 pip install numpy scipy pandas scikit-learn tqdm
 ```
+
+> ❗ Ensure that the ```/D-SenseModel/D_Sense_DNN``` folder is located at the same level as ```/D-SenseModel/main.py```.
