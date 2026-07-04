@@ -629,13 +629,13 @@ After adjusting or selecting the parameters and completing training, the confusi
 ### Multi-Task Gait Recognition
 
 <p align="center">
-<img src="Image/Fig.7(a).jpg" width="400"/>
+<img src="Image/Fig.7(a).jpg" width="300"/>
 </p>
 
 ### Multi-Task Recognition Accuracy of Different Sensing Areas
 
 <p align="center">
-<img src="Image/Fig.8(a).jpg" width="400"/>
+<img src="Image/Fig.8(a).jpg" width="300"/>
 </p>
 
 <div align="center">
@@ -812,15 +812,15 @@ After adjusting or selecting the parameters and completing training, the confusi
 The main experiments in this paper adopt a CNN-GRU network with the Dynamic Weighting Mechanism (DWM):
 
 <p align="center">
-<img src="Image/Fig.9.jpg" width="500"/>
+<img src="Image/Fig.9.jpg" width="400"/>
 </p>
 
 ### Multi-Task Loss Curve and DWM Weight Distribution
 
 <div align="center">
-    <img src="Image/Fig.6(a).jpg" width="300">
-    <img src="Image/Fig.6(b).jpg" width="300">
-    <img src="Image/Fig.7(b).jpg" width="330">
+    <img src="Image/Fig.6(a).jpg" width="210">
+    <img src="Image/Fig.6(b).jpg" width="210">
+    <img src="Image/Fig.7(b).jpg" width="230">
 </div>
 
 ## Citation
