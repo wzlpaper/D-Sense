@@ -197,4 +197,8 @@ Each ```.mat``` file in the ```ADP/``` directory is saved as a 3-D tensor after 
 
 </div>
 
-The physical interpretation of the power distribution can be found in the corresponding [paper](https://doi.org/10.1109/TMC.2026.3709191):
+The physical interpretation of the power distribution can be found in our [paper](https://doi.org/10.1109/TMC.2026.3709191):
+
+<p align="center">
+<img src="Image/Fig.3.jpg" width="800"/>
+</p>
