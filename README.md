@@ -416,3 +416,212 @@ The supported models, tasks, and their corresponding indices are summarized in t
 After adjusting or selecting the parameters and completing training, the confusion matrix of the model under the selected configuration will be displayed based on its performance on the test set.
 
 ## Partial Sensing Accuracy
+
+### Experimental Accuracy of the D-Sense Across Different Sensing Tasks
+
+<p align="center">
+<img src="Image/Fig.4/Fig.4(legend).jpg" width="800"/>
+</p>
+
+<p align="center">
+<strong>Gesture recognition.</strong><br>
+<img src="Image/Fig.4/Fig.4(a).jpg" width="800"/>
+</p>
+
+<p align="center">
+<strong>User identification.</strong><br>
+<img src="Image/Fig.4/Fig.4(b).jpg" width="800"/>
+</p>
+
+<p align="center">
+<strong>Orientation recognition.</strong><br>
+<img src="Image/Fig.4/Fig.4(c).jpg" width="800"/>
+</p>
+
+<p align="center">
+<strong>Localization.</strong><br>
+<img src="Image/Fig.4/Fig.4(d).jpg" width="800"/>
+</p>
+
+### Cross-domain Gesture and User Synchronized Recognition
+
+<div align="center">
+
+<table>
+  <tr>
+    <th>Target Label</th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+  </tr>
+
+  <tr>
+    <td align="center">Gesture</td>
+    <td align="center">In-domain</td>
+    <td align="center">98.33%</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td align="center">Location</td>
+    <td align="center">84.83%</td>
+    <td align="center">88.83%</td>
+    <td align="center">85.50%</td>
+    <td align="center">85.33%</td>
+    <td align="center">88.83%</td>
+  </tr>
+
+  <tr>
+    <td align="center">Orientation</td>
+    <td align="center">61.50%</td>
+    <td align="center">79.00%</td>
+    <td align="center">85.17%</td>
+    <td align="center">82.17%</td>
+    <td align="center">75.58%</td>
+  </tr>
+
+  <tr style="height:8px;">
+    <td colspan="6"></td>
+  </tr>
+
+  <tr>
+    <td align="center">User</td>
+    <td align="center">In-domain</td>
+    <td align="center">94.67%</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td align="center">Location</td>
+    <td align="center">76.33%</td>
+    <td align="center">82.33%</td>
+    <td align="center">83.67%</td>
+    <td align="center">81.33%</td>
+    <td align="center">86.33%</td>
+  </tr>
+
+  <tr>
+    <td align="center">Orientation</td>
+    <td align="center">68.67%</td>
+    <td align="center">77.67%</td>
+    <td align="center">80.67%</td>
+    <td align="center">80.67%</td>
+    <td align="center">80.09%</td>
+  </tr>
+
+</table>
+
+</div>
+
+<p align="center">
+<sub>Target label denotes test data, while others are used for training.</sub>
+</p>
+
+### Synchronized Multi-Subtask Recognition
+
+<div align="center">
+
+<table>
+  <tr>
+    <th>Task</th>
+    <th>Gesture</th>
+    <th>User</th>
+    <th>Orientation</th>
+    <th>Location</th>
+  </tr>
+
+  <tr>
+    <td align="center">Gesture</td>
+    <td align="center">-</td>
+    <td align="center">94.67%</td>
+    <td align="center">95.60%</td>
+    <td align="center">84.40%</td>
+  </tr>
+
+  <tr>
+    <td align="center">User</td>
+    <td align="center">97.33%</td>
+    <td align="center">-</td>
+    <td align="center">95.20%</td>
+    <td align="center">82.40%</td>
+  </tr>
+
+  <tr>
+    <td align="center">Orientation</td>
+    <td align="center">96.67%</td>
+    <td align="center">93.67%</td>
+    <td align="center">-</td>
+    <td align="center">83.40%</td>
+  </tr>
+
+  <tr>
+    <td align="center">Location</td>
+    <td align="center">96.33%</td>
+    <td align="center">94.33%</td>
+    <td align="center">94.20%</td>
+    <td align="center">-</td>
+  </tr>
+
+  <tr style="height:8px;">
+    <td colspan="6"></td>
+  </tr>
+
+  <tr>
+    <td align="center">Gesture--User</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">94.40%</td>
+    <td align="center">83.80%</td>
+  </tr>
+
+  <tr>
+    <td align="center">Gesture--Orientation</td>
+    <td align="center">-</td>
+    <td align="center">93.00%</td>
+    <td align="center">-</td>
+    <td align="center">85.40%</td>
+  </tr>
+
+  <tr>
+    <td align="center">Gesture--Location</td>
+    <td align="center">-</td>
+    <td align="center">93.00%</td>
+    <td align="center">95.20%</td>
+    <td align="center">-</td>
+  </tr>
+
+  <tr>
+    <td align="center">User--Orientation</td>
+    <td align="center">97.17%</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">85.20%</td>
+  </tr>
+
+  <tr>
+    <td align="center">User--Location</td>
+    <td align="center">96.33%</td>
+    <td align="center">-</td>
+    <td align="center">95.40%</td>
+    <td align="center">-</td>
+  </tr>
+
+  <tr>
+    <td align="center">Orientation--Location</td>
+    <td align="center">96.17%</td>
+    <td align="center">91.00%</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+  </tr>
+
+</table>
+
+</div>
+
+### Cross-domain Gesture Recognition
