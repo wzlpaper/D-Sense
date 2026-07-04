@@ -17,7 +17,18 @@ In this repository, we release the code for extracting the Absolute Distance Pro
 ## Preparations
 This section introduces the requirements for running this codebase.
 
-### MATLAB (```/ADP_Estimates```)
-We recommend using MATLAB R2023b or newer versions.
+### ADP Estimates
+We recommend using MATLAB R2023b or later to extract ADP. The procedure is as follows:
 
-### Python (```/D-SenseModel```)
+- Download the ```/ADP_Estimates``` directory from this repository.
+- Launch MATLAB and set the working directory to ```/ADP_Estimates```.
+- Add ```/ADP_Estimates/CSI_to_DFS``` and ```/ADP_Estimates/generate_ADP``` to the MATLAB path using the "Add Folder and Subfolders" function.
+### D-Sense Model
+
+#### Hardware
+- We recommend using an NVIDIA RTX 4060 (8GB) or higher GPU.
+- 
+Python (```/D-SenseModel```)
+- **Ubuntu:** The D-SenseModel is trained using TensorFlow 2.18.0. Since TensorFlow ≥ 2.11.0 does not support native GPU acceleration on Windows, we recommend using WSL2 to set up an Ubuntu 22.04 LTS environment on Windows 11, where GPU acceleration can be properly enabled. If you are using a server with a native Linux system, this setup can be ignored.
+- **GPU:** We recommend using an NVIDIA RTX 4060 (8GB) or higher GPU.
+- **CUDA:** Our experiments show that CUDA 12.5 is compatible with TensorFlow 2.18.0.
