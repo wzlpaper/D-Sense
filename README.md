@@ -35,7 +35,7 @@ We recommend using MATLAB R2023b or later to extract ADP. The procedure is as fo
 #### Environment Setup
 **1. Create a Conda environment named D-Sense based on Python 3.10 and activate it**
 ```bash
-conda create -n D-Sense python=3.10
+conda create -n D-Sense python=3.10 -y
 conda activate D-Sense
 ```
 
@@ -47,7 +47,7 @@ pip install tensorflow==2.18.0
 
 **3. Install CUDA**
 
-Install CUDA 12.5 from the official NVIDIA [website](https://developer.nvidia.com/cuda-12-5-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=WSL-Ubuntu&target_version=2.0&target_type=deb_local), install it via the following commands:
+Install CUDA 12.5 from the official NVIDIA [website](https://developer.nvidia.com/cuda-12-5-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=WSL-Ubuntu&target_version=2.0&target_type=deb_local), or install it via the following commands:
 ```bash
 wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-wsl-ubuntu.pin
 sudo mv cuda-wsl-ubuntu.pin /etc/apt/preferences.d/cuda-repository-pin-600
@@ -60,5 +60,5 @@ sudo apt-get -y install cuda-toolkit-12-5
 
 **4. Install additional dependencies**
 ```bash
-pip install numpy scipy pandas scikit-learn tqdm tensorflow==2.18.0
+pip install numpy scipy pandas scikit-learn tqdm
 ```
