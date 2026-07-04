@@ -1,5 +1,19 @@
 <h1 align="center">D-Sense: Expanding Gesture Recognition via Wi-Fi</h1>
-This code repository provides a basic implementation of D-Sense.
+
+<p align="center">
+This repository provides a basic implementation of D-Sense.
+</p>
+
+<p align="center">
+<a href="https://opensource.org/licenses/MIT">
+<img src="https://img.shields.io/badge/License-MIT-yellow.svg">
+</a>
+</p>
+
+---
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Cite the Paper
 *Z. Wang, Y. Liu and Z. Tao, "D-Sense: Expanding Gesture Recognition via Wi-Fi," in IEEE Transactions on Mobile Computing, doi: 10.1109/TMC.2026.3709191.*
