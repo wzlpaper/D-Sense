@@ -17,4 +17,7 @@ In this repository, we release the code for extracting the Absolute Distance Pro
 ## Preparations
 This section introduces the requirements for running this codebase.
 
+### MATLAB (```/ADP_Estimates```)
+We recommend using MATLAB R2023b or newer versions.
 
+### Python (```)
