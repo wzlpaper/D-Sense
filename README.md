@@ -88,69 +88,69 @@ params = {
 <table>
   <thead>
     <tr>
-      <th align="center">No.</th>
+      <th align="center">params</th>
       <th align="center">Description</th>
       <th align="center">Example Value</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td align="center">1</td>
+      <td align="center">params{1}</td>
       <td align="center">Doppler frequency resolution</td>
       <td align="center"><code>1</code></td>
     </tr>
     <tr>
-      <td align="center">2</td>
+      <td align="center">params{2}</td>
       <td align="center">DFS time dimension sampling</td>
       <td align="center"><code>100</code></td>
     </tr>
     <tr>
-      <td align="center">3</td>
+      <td align="center">params{3}</td>
       <td align="center">Spatial representation rule</td>
-      <td align="center"><code>N=sigma</code> / <code>delta</code></td>
+      <td align="center"><code>N=0.01(sigma)</code> / <code>N=delta</code></td>
     </tr>
     <tr>
-      <td align="center">4</td>
+      <td align="center">params{4}</td>
       <td align="center">ADP dimensions</td>
       <td align="center"><code>[20, 20]</code></td>
     </tr>
     <tr>
-      <td align="center">5</td>
+      <td align="center">params{5}</td>
       <td align="center">Area index</td>
       <td align="center"><code>1~9</code></td>
     </tr>
     <tr>
-      <td align="center">6</td>
+      <td align="center">params{6}</td>
       <td align="center">CSI save path</td>
       <td align="center"><code>CSI\</code></td>
     </tr>
     <tr>
-      <td align="center">7</td>
+      <td align="center">params{7}</td>
       <td align="center">DFS save path</td>
       <td align="center"><code>DFS\</code></td>
     </tr>
     <tr>
-      <td align="center">8</td>
+      <td align="center">params{8}</td>
       <td align="center">ADP save path</td>
       <td align="center"><code>ADP\</code></td>
     </tr>
     <tr>
-      <td align="center">9</td>
+      <td align="center">params{9}</td>
       <td align="center">D save path</td>
       <td align="center"><code>D\</code></td>
     </tr>
     <tr>
-      <td align="center">10</td>
+      <td align="center">params{10}</td>
       <td align="center">Minimum Doppler frequency</td>
       <td align="center"><code>-60</code></td>
     </tr>
     <tr>
-      <td align="center">11</td>
+      <td align="center">params{11}</td>
       <td align="center">Maximum Doppler frequency</td>
       <td align="center"><code>60</code></td>
     </tr>
     <tr>
-      <td align="center">12</td>
+      <td align="center">params{12}</td>
       <td align="center">Task</td>
       <td align="center"><code>Gesture</code> / <code>Gait</code></td>
     </tr>
@@ -158,3 +158,5 @@ params = {
 </table>
 
 </div>
+After configuring the parameters, run ```/ADP_Estimates/ADP_main.m```. Upon completion, the Doppler frequency data for each CSI sample will be saved in the ```DFS/``` directory, the generated ADP data will be saved in the ```ADP/``` directory, and the corresponding Frequency-Distance Translation Tensor for the selected area index will be saved in the ```D/``` directory.
+> ❗ The Doppler Frequency Shift (DFS) is generated implicitly. Before the ADP for the selected region is fully generated, DFS data cannot be accessed or visualized during runtime. Once all ADP data have been generated, the DFS results can be viewed without any restriction. If early access to DFS is required, please refer to the corresponding DFS data in the Widar3.0 dataset.
