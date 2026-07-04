@@ -182,7 +182,7 @@ Each ```.mat``` file in the ```ADP/``` directory is saved as a 3-D tensor after 
       <td align="center">Magnification</td>
       <td align="center">800%</td>
       <td align="center">
-        <img src="https://raw.githubusercontent.com/wzlpaper/D-Sense/main/Image/Fig2_ADP_user1_1_1_4_11_y.gif" width="220"><br>
+        <img src="/Image/Fig2-ADP-user1-1-1-4-11-y.gif" width="220"><br>
         ADP power distribution visualization<br>
         (120 × 120 spatial map)
       </td>
