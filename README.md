@@ -420,27 +420,27 @@ After adjusting or selecting the parameters and completing training, the confusi
 ### Experimental Accuracy of the D-Sense Across Different Sensing Tasks
 
 <p align="center">
-<img src="Image/Fig.4/Fig.4(legend).jpg" width="800"/>
+<img src="Image/Fig.4/Fig.4(legend).jpg" width="500"/>
 </p>
 
 <p align="center">
 <strong>Gesture recognition.</strong><br>
-<img src="Image/Fig.4/Fig.4(a).jpg" width="800"/>
+<img src="Image/Fig.4/Fig.4(a).jpg" width="500"/>
 </p>
 
 <p align="center">
 <strong>User identification.</strong><br>
-<img src="Image/Fig.4/Fig.4(b).jpg" width="800"/>
+<img src="Image/Fig.4/Fig.4(b).jpg" width="500"/>
 </p>
 
 <p align="center">
 <strong>Orientation recognition.</strong><br>
-<img src="Image/Fig.4/Fig.4(c).jpg" width="800"/>
+<img src="Image/Fig.4/Fig.4(c).jpg" width="500"/>
 </p>
 
 <p align="center">
 <strong>Localization.</strong><br>
-<img src="Image/Fig.4/Fig.4(d).jpg" width="800"/>
+<img src="Image/Fig.4/Fig.4(d).jpg" width="500"/>
 </p>
 
 ### Cross-domain Gesture and User Synchronized Recognition
@@ -518,10 +518,6 @@ After adjusting or selecting the parameters and completing training, the confusi
 </table>
 
 </div>
-
-<p align="center">
-<sub>Target label denotes test data, while others are used for training.</sub>
-</p>
 
 ### Synchronized Multi-Subtask Recognition
 
@@ -625,3 +621,192 @@ After adjusting or selecting the parameters and completing training, the confusi
 </div>
 
 ### Cross-domain Gesture Recognition
+
+<p align="center">
+<img src="Image/Fig.5.jpg" width="1000"/>
+</p>
+
+### Multi-Task Gait Recognition
+
+<p align="center">
+<img src="Image/Fig.7(a).jpg" width="400"/>
+</p>
+
+### Multi-Task Recognition Accuracy of Different Sensing Areas
+
+<p align="center">
+<img src="Image/Fig.8(a).jpg" width="400"/>
+</p>
+
+<div align="center">
+
+<table>
+  <tr>
+    <th>Area</th>
+    <th>Gesture</th>
+    <th>User</th>
+    <th>Ori.</th>
+    <th>Loc.</th>
+    <th>Gait</th>
+    <th>Track</th>
+  </tr>
+
+  <tr>
+    <td align="center">1</td>
+    <td align="center">94.76%</td>
+    <td align="center">87.64%</td>
+    <td align="center">83.62%</td>
+    <td align="center">70.00%</td>
+    <td align="center">89.35%</td>
+    <td align="center">99.46%</td>
+  </tr>
+
+  <tr>
+    <td align="center">2</td>
+    <td align="center">95.20%</td>
+    <td align="center">88.62%</td>
+    <td align="center">88.53%</td>
+    <td align="center">77.69%</td>
+    <td align="center">92.89%</td>
+    <td align="center">99.50%</td>
+  </tr>
+
+  <tr>
+    <td align="center">3</td>
+    <td align="center">95.84%</td>
+    <td align="center">88.62%</td>
+    <td align="center">88.18%</td>
+    <td align="center">76.00%</td>
+    <td align="center">90.20%</td>
+    <td align="center">99.49%</td>
+  </tr>
+
+  <tr>
+    <td align="center">4</td>
+    <td align="center">94.12%</td>
+    <td align="center">90.69%</td>
+    <td align="center">88.34%</td>
+    <td align="center">73.93%</td>
+    <td align="center">94.77%</td>
+    <td align="center">99.95%</td>
+  </tr>
+
+  <tr>
+    <td align="center">5</td>
+    <td align="center">96.83%</td>
+    <td align="center">92.45%</td>
+    <td align="center">91.13%</td>
+    <td align="center">83.20%</td>
+    <td align="center">92.60%</td>
+    <td align="center">100%</td>
+  </tr>
+
+  <tr>
+    <td align="center">6</td>
+    <td align="center">96.46%</td>
+    <td align="center">90.93%</td>
+    <td align="center">88.24%</td>
+    <td align="center">79.41%</td>
+    <td align="center">95.34%</td>
+    <td align="center">100%</td>
+  </tr>
+
+  <tr>
+    <td align="center">7</td>
+    <td align="center">93.36%</td>
+    <td align="center">90.52%</td>
+    <td align="center">84.87%</td>
+    <td align="center">75.74%</td>
+    <td align="center">94.33%</td>
+    <td align="center">99.67%</td>
+  </tr>
+
+  <tr>
+    <td align="center">8</td>
+    <td align="center">96.56%</td>
+    <td align="center">90.80%</td>
+    <td align="center">93.69%</td>
+    <td align="center">85.04%</td>
+    <td align="center">94.65%</td>
+    <td align="center">100%</td>
+  </tr>
+
+</table>
+
+</div>
+
+### Cross-Domain Location and Orientation Recognition
+
+<div align="center">
+
+<table>
+  <tr>
+    <th>Target Label</th>
+    <th>1/Push</th>
+    <th>2/Sweep</th>
+    <th>3/Clap</th>
+    <th>4/Slide</th>
+    <th>5/Z</th>
+  </tr>
+
+  <tr>
+    <td align="center">CL-O</td>
+    <td align="center">69.17%</td>
+    <td align="center">77.17%</td>
+    <td align="center">71.17%</td>
+    <td align="center">70.17%</td>
+    <td align="center">90.33%</td>
+  </tr>
+
+  <tr>
+    <td align="center">CU-O</td>
+    <td align="center">67.37%</td>
+    <td align="center">61.92%</td>
+    <td align="center">60.07%</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+  </tr>
+
+  <tr>
+    <td align="center">CG-O</td>
+    <td align="center">35.60%</td>
+    <td align="center">70.80%</td>
+    <td align="center">38.60%</td>
+    <td align="center">28.80%</td>
+    <td align="center">50.20%</td>
+  </tr>
+
+  <tr>
+    <td align="center">CO-L</td>
+    <td align="center">32.83%</td>
+    <td align="center">35.00%</td>
+    <td align="center">35.17%</td>
+    <td align="center">45.00%</td>
+    <td align="center">32.67%</td>
+  </tr>
+
+  <tr>
+    <td align="center">CG-L</td>
+    <td align="center">40.60%</td>
+    <td align="center">43.40%</td>
+    <td align="center">20.20%</td>
+    <td align="center">35.00%</td>
+    <td align="center">34.60%</td>
+  </tr>
+
+  <tr>
+    <td align="center">CU-L</td>
+    <td align="center">45.40%</td>
+    <td align="center">40.11%</td>
+    <td align="center">44.11%</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+  </tr>
+
+</table>
+
+</div>
+
+## Effectiveness of the DWM
+
+The main experiments in this paper adopt a CNN-GRU network with the Dynamic Weighting Mechanism (DWM):
