@@ -161,5 +161,55 @@ params = {
 
 After configuring the parameters, run ```/ADP_Estimates/ADP_main.m```. Upon completion, the Doppler frequency data for each CSI sample will be saved in the ```DFS/``` directory, the generated ADP data will be saved in the ```ADP/``` directory, and the corresponding Frequency-Distance Translation Tensor for the selected area index will be saved in the ```D/``` directory.
 
-
 > ❗ The Doppler Frequency Shift (DFS) is generated implicitly. Before the ADP for the selected region is fully generated, DFS data cannot be accessed or visualized during runtime. Once all ADP data have been generated, the DFS results can be viewed without any restriction. If early access to DFS is required, please refer to the corresponding DFS data in the [Widar3.0 dataset](https://tns.thss.tsinghua.edu.cn/widar3.0/).
+
+Each ```.mat``` file in the ```ADP/``` directory is saved as a 3-D tensor after applying the configured scaling and sampling settings. Taking params{4} = [120, 120] as an example, and without downsampling, the following configuration allows clear visualization of the dynamic variations in ADP power:
+
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">MATLAB Tools (implay)</th>
+      <th align="center">Recommended Parameters</th>
+      <th align="center">Visualization Results</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+      <td align="center">Magnification</td>
+      <td align="center">800%</td>
+      <td align="center">
+        <img src="https://raw.githubusercontent.com/wzlpaper/D-Sense/main/Image/Fig2_ADP_user1_1_1_4_11_y.gif" width="220"><br>
+        ADP power distribution visualization<br>
+        (120 × 120 spatial map)
+      </td>
+    </tr>
+
+    <tr>
+      <td align="center">Color Map</td>
+      <td align="center"><code>parula(256)</code></td>
+      <td align="center">
+        Preserves fine-grained power variations<br>
+        Enhances contrast in low-SNR regions<br>
+        Improves spatial continuity perception
+      </td>
+    </tr>
+
+    <tr>
+      <td align="center">Frame Rate</td>
+      <td align="center">20 frames/sec</td>
+      <td align="center">
+        Smooth temporal evolution of ADP<br>
+        Maintains perceptual continuity<br>
+        Suitable for dynamic gesture analysis
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+</div>
+
