@@ -810,3 +810,34 @@ After adjusting or selecting the parameters and completing training, the confusi
 ## Effectiveness of the DWM
 
 The main experiments in this paper adopt a CNN-GRU network with the Dynamic Weighting Mechanism (DWM):
+
+<p align="center">
+<img src="Image/Fig.9.jpg" width="500"/>
+</p>
+
+### Multi-Task Loss Curve and DWM Weight Distribution
+
+<div align="center">
+    <img src="Image/Fig.6(a).jpg" width="300">
+    <img src="Image/Fig.6(b).jpg" width="300">
+    <img src="Image/Fig.7(b).jpg" width="330">
+</div>
+
+## Citation
+
+If our work has been helpful to your research, please consider citing:
+
+```bibtex
+@ARTICLE{11592660,
+  author={Wang, Zhelun and Liu, Ying and Tao, Zhiyong},
+  journal={IEEE Transactions on Mobile Computing},
+  title={D-Sense: Expanding Gesture Recognition via Wi-Fi},
+  year={2026},
+  pages={1-18},
+  doi={10.1109/TMC.2026.3709191}
+}
+```
+
+## Contact
+
+If you have any questions, please feel free to contact [ME](mailto:wzlpaper@126.com).
