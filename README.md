@@ -88,7 +88,7 @@ params = {
 <table>
   <thead>
     <tr>
-      <th align="center">params</th>
+      <th align="center">Params</th>
       <th align="center">Description</th>
       <th align="center">Example Value</th>
     </tr>
@@ -96,57 +96,57 @@ params = {
   <tbody>
     <tr>
       <td align="center">params{1}</td>
-      <td align="center">Doppler frequency resolution</td>
+      <td align="center">Doppler Frequency Resolution</td>
       <td align="center"><code>1</code></td>
     </tr>
     <tr>
       <td align="center">params{2}</td>
-      <td align="center">DFS time dimension sampling</td>
+      <td align="center">DFS Time Dimension Sampling</td>
       <td align="center"><code>100</code></td>
     </tr>
     <tr>
       <td align="center">params{3}</td>
-      <td align="center">Spatial representation rule</td>
+      <td align="center">Spatial Representation Rule</td>
       <td align="center"><code>N=0.01(sigma)</code> / <code>N=delta</code></td>
     </tr>
     <tr>
       <td align="center">params{4}</td>
-      <td align="center">ADP dimensions</td>
+      <td align="center">ADP Dimensions</td>
       <td align="center"><code>[20, 20]</code></td>
     </tr>
     <tr>
       <td align="center">params{5}</td>
-      <td align="center">Area index</td>
+      <td align="center">Area Index</td>
       <td align="center"><code>1~9</code></td>
     </tr>
     <tr>
       <td align="center">params{6}</td>
-      <td align="center">CSI save path</td>
+      <td align="center">CSI Save Path</td>
       <td align="center"><code>CSI\</code></td>
     </tr>
     <tr>
       <td align="center">params{7}</td>
-      <td align="center">DFS save path</td>
+      <td align="center">DFS Save Path</td>
       <td align="center"><code>DFS\</code></td>
     </tr>
     <tr>
       <td align="center">params{8}</td>
-      <td align="center">ADP save path</td>
+      <td align="center">ADP Save Path</td>
       <td align="center"><code>ADP\</code></td>
     </tr>
     <tr>
       <td align="center">params{9}</td>
-      <td align="center">D save path</td>
+      <td align="center">D Save Path</td>
       <td align="center"><code>D\</code></td>
     </tr>
     <tr>
       <td align="center">params{10}</td>
-      <td align="center">Minimum Doppler frequency</td>
+      <td align="center">Minimum Doppler Frequency</td>
       <td align="center"><code>-60</code></td>
     </tr>
     <tr>
       <td align="center">params{11}</td>
-      <td align="center">Maximum Doppler frequency</td>
+      <td align="center">Maximum Doppler Frequency</td>
       <td align="center"><code>60</code></td>
     </tr>
     <tr>
@@ -170,14 +170,14 @@ Each ```.mat``` file in the ```ADP/``` directory is saved as a 3-D tensor after 
 <table border="1">
 
   <tr>
-    <th>MATLAB Tools (implay)</th>
-    <th>Recommended Parameters</th>
-    <th>Visualization Results</th>
+    <th align="center">MATLAB Tools (implay)</th>
+    <th align="center">Recommended Parameters</th>
+    <th align="center">Visualization Results</th>
   </tr>
 
   <tr>
     <td align="center">Magnification</td>
-    <td align="center">800%</td>
+    <td align="center"><code>800%</code></td>
     <td align="center" rowspan="3">
       <img src="Image/Fig.2.gif" width="240"><br>
     </td>
@@ -185,12 +185,12 @@ Each ```.mat``` file in the ```ADP/``` directory is saved as a 3-D tensor after 
 
   <tr>
     <td align="center">Color Map</td>
-    <td align="center">parula(256)</td>
+    <td align="center"><code>parula(256)</code></td>
   </tr>
 
   <tr>
     <td align="center">Frame Rate</td>
-    <td align="center">20 fps</td>
+    <td align="center"><code>20 fps</code></td>
   </tr>
 
 </table>
@@ -206,3 +206,152 @@ The physical interpretation of the power distribution can be found in our [paper
 ## D-Sense Model
 D-Sense model is built based on the TensorFlow framework. All experiments are conducted on Ubuntu 22.04 LTS with an NVIDIA RTX 4060 GPU for training and evaluation. Before running ```/D-SenseModel/main.py```, the following parameters should be properly configured:
 
+```python
+test_set_ratio   = 0.2
+ADP_dir          = '/ADP'
+domains          = [1, 2, 3, 4, 5, 6]
+domain_idx       = domains[1]
+gesture_cats     = [1, 2, 3, 4, 5, 6]
+user_cats        = [1, 2, 3]
+gait_cats        = [1, 2, 3, 4, 5, 6, 7]
+orientation_cats = [1, 2, 3, 4, 5]
+track_cats       = [1, 2, 3, 4]
+location_cats    = [1, 2, 3, 4, 5]
+N_gesture        = len(gesture_cats)
+N_user           = len(user_cats)
+N_gait           = len(gait_cats)
+N_orientation    = len(orientation_cats)
+N_track          = len(track_cats)
+N_location       = len(location_cats)
+t_max            = 0
+n_epochs         = 100
+dropout_ratio    = 0.5
+N_RNN, RNN_Type  = 128, 'GRU'
+n_batch          = 32
+learning_rate    = 0.001
+use_DWM          = True
+task_, model_    = list(tasks.items())[-1], models[0]
+```
+
+<div align="center">
+
+<table>
+  <tr>
+    <th align="center">Parameter</th>
+    <th align="center">Description</th>
+    <th align="center">Example Value</th>
+  </tr>
+
+  <tr>
+    <td align="center">test_set_ratio</td>
+    <td align="center">Ratio of Test Split</td>
+    <td align="center"><code>0.2</code></td>
+  </tr>
+
+  <tr>
+    <td align="center">ADP_dir</td>
+    <td align="center">Directory of ADP Dataset</td>
+    <td align="center"><code>/ADP</code></td>
+  </tr>
+
+  <tr>
+    <td align="center">domains</td>
+    <td align="center">Available Domain Indices</td>
+    <td align="center"><code>[1,2,3,4,5,6]</code></td>
+  </tr>
+
+  <tr>
+    <td align="center">domain_idx</td>
+    <td align="center">Selected Domain Index</td>
+    <td align="center"><code>domains[1]</code></td>
+  </tr>
+
+  <tr>
+    <td align="center">gesture_cats</td>
+    <td align="center">Gesture Categories</td>
+    <td align="center"><code>[1,2,3,4,5,6]</code></td>
+  </tr>
+
+  <tr>
+    <td align="center">user_cats</td>
+    <td align="center">User Categories</td>
+    <td align="center"><code>[1,2,3]</code></td>
+  </tr>
+
+  <tr>
+    <td align="center">gait_cats</td>
+    <td align="center">Gait Categories</td>
+    <td align="center"><code>[1,2,3,4,5,6,7]</code></td>
+  </tr>
+
+  <tr>
+    <td align="center">orientation_cats</td>
+    <td align="center">Orientation Categories</td>
+    <td align="center"><code>[1,2,3,4,5]</code></td>
+  </tr>
+
+  <tr>
+    <td align="center">track_cats</td>
+    <td align="center">Tracking Categories</td>
+    <td align="center"><code>[1,2,3,4]</code></td>
+  </tr>
+
+  <tr>
+    <td align="center">location_cats</td>
+    <td align="center">Location Categories</td>
+    <td align="center"><code>[1,2,3,4,5]</code></td>
+  </tr>
+
+  <tr>
+    <td align="center">n_epochs</td>
+    <td align="center">Training Epochs</td>
+    <td align="center"><code>100</code></td>
+  </tr>
+
+  <tr>
+    <td align="center">dropout_ratio</td>
+    <td align="center">Dropout Ratio</td>
+    <td align="center"><code>0.5</code></td>
+  </tr>
+
+  <tr>
+    <td align="center">RNN</td>
+    <td align="center">Hidden Size / Type</td>
+    <td align="center"><code>128 / GRU</code></td>
+  </tr>
+
+  <tr>
+    <td align="center">batch_size</td>
+    <td align="center">Batch Size</td>
+    <td align="center"><code>32</code></td>
+  </tr>
+
+  <tr>
+    <td align="center">learning_rate</td>
+    <td align="center">Learning Rate</td>
+    <td align="center"><code>0.001</code></td>
+  </tr>
+
+  <tr>
+    <td align="center">use_DWM</td>
+    <td align="center">Enable DWM Module</td>
+    <td align="center"><code>True</code></td>
+  </tr>
+
+  <tr>
+    <td align="center">task_</td>
+    <td align="center">Task Selection</td>
+    <td align="center"><code>list(tasks.items())[-1]</code></td>
+  </tr>
+
+  <tr>
+    <td align="center">model_</td>
+    <td align="center">Model Selection</td>
+    <td align="center"><code>models[0]</code></td>
+  </tr>
+  
+</table>
+
+</div>
+
+The supported models, tasks, and their corresponding indices are summarized in the table below:
