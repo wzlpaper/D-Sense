@@ -202,3 +202,7 @@ The physical interpretation of the power distribution can be found in our [paper
 <p align="center">
 <img src="Image/Fig.3.jpg" width="800"/>
 </p>
+
+## D-Sense Model
+D-Sense model is built based on the TensorFlow framework. All experiments are conducted on Ubuntu 22.04 LTS with an NVIDIA RTX 4060 GPU for training and evaluation. Before running ```/D-SenseModel/main.py```, the following parameters should be properly configured:
+
