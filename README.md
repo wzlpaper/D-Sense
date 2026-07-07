@@ -835,7 +835,7 @@ The main experiments in this paper adopt a CNN-GRU network with the Dynamic Weig
 
 <div align="center">
     <img src="Image/Fig.6(a).jpg" width="210">
-    <img src="Image/Fig.6(b).jpg" width="210">
+    <img src="Image/Fig.6(b).R1.jpg" width="210">
     <img src="Image/Fig.7(b).jpg" width="230">
 </div>
 
